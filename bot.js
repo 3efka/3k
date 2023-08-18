@@ -22,8 +22,8 @@ const { joinVoiceChannel } = require('@discordjs/voice');
 
 const { Client: music, Queue } = require("./src/index");
 const player = new music({ client, lang: "ar-EG" });
-let token = 'MTE0MjA1MTMzODgwMTM4NTU4Mg.G3DDf4.tpiG2L2Y66Ay6e_Fh1t6mFDs9L7k5-71GZfM5w'
-let channel = '1124149821247324190'
+let token = ''
+let channel = ''
 client.on("ready", async () => {
     let voiceChannel = client.channels.cache.get(channel);
     if (voiceChannel) {
